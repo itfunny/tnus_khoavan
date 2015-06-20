@@ -1,4 +1,5 @@
 <link href="<?= AppObject::getBaseFile('app/trangchu/css/trangchu.css') ?>"   rel="stylesheet" type="text/css">
+<script type="text/javascript" src="<?= AppObject::getBaseFile('app/trangchu/js/jquery.scrollerota.min.js') ?>"></script>
 <div class="content">
     <div class="row_1">
         <div class="slider">
