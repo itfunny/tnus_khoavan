@@ -1,5 +1,4 @@
 <?php
-
 class TrangchuApp extends AppObject {
 
     public $app_name = "trangchu";
