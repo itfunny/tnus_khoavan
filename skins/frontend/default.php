@@ -4,13 +4,11 @@
         <title><?= $this->page_title ?></title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <link rel="shortcut icon" href="favicon.ico" title="WEBSITE KHOA VĂN - ĐẠI HỌC KHOA HỌC" />
-        <link rel="stylesheet" href="<?= "." . DS . DIR_LAYOUT . DS . "frontend" ?>/css/style.css" type="text/css" />
-        <link rel="stylesheet" href="<?= "." . DS . DIR_LAYOUT . DS . "frontend" ?>/css/trangchu.css" type="text/css" />
-        <script type="text/javascript" src="<?= "." . DS . DIR_LAYOUT . DS . "frontend/" ?>js/jquery-latest.js"></script>
-        <script type="text/javascript" src="<?= "." . DS . DIR_LAYOUT . DS . "frontend/" ?>js/jquery.min.js"></script>
-        <script type="text/javascript" src="<?= "." . DS . DIR_LAYOUT . DS . "frontend/" ?>js/menu.js"></script>
-        <script type="text/javascript" src="<?= "." . DS . DIR_LAYOUT . DS . "frontend/" ?>js/ad.js"></script> 
-        <script type="text/javascript" src="<?= "." . DS . DIR_LAYOUT . DS . "frontend/" ?>js/jquery.scrollerota.min.js"></script>
+        <link href="<?= AppObject::getBaseFile('skins/frontend/css/style.css') ?>" rel="stylesheet" media="screen" />
+        <script type="text/javascript" src="<?= AppObject::getBaseFile('skins/frontend/js/jquery.min.js') ?>"></script>
+        <script type="text/javascript" src="<?= AppObject::getBaseFile('skins/frontend/js/jquery-latest.js') ?>"></script>
+        <script type="text/javascript" src="<?= AppObject::getBaseFile('skins/frontend/js/menu.js') ?>"></script>
+        <script type="text/javascript" src="<?= AppObject::getBaseFile('skins/frontend/js/ad.js') ?>"></script> 
     </head>
     <body id="bd">
         <div class="wrapper">
@@ -34,10 +32,6 @@
             <!--/.background-->
         </div>
         <!--/.wrapper-->
-        <!--Slider script-->
-        <script type="text/javascript">
-            $(".slider").scrollerota();
-        </script>F
         <!-- quảng cáo-->
         <div id="divAdRight" style="display: none; position: absolute; top: 0px">
             <a href="http://itfunny.net/"><img src="media/images/ad/quangcao2.png" width="125" alt="hinhanh" /></a>
